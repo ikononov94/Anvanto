@@ -1,0 +1,126 @@
+.container
+	max-width 1110px
+	margin 0 auto
+.header-top
+	padding 12px 17px
+	font-family 1rem
+	display flex
+	flex-direction row
+	justify-content space-between
+	background-color bgcolortop
+.header-top__left-language
+.header-top__left-currency
+.header-top__right-contact-us
+.header-top__right-sing-in
+	display inline-block
+
+.header-top__left-currency
+	margin-left 1.9rem
+.header-top__tab
+	text-transform uppercase
+	margin-left .23rem
+.header-top__title
+	color colortop
+.header-top__arrow 
+	margin-left .8rem
+.header-top__left-currency
+	.header-top__arrow 
+		margin-left 1.1rem
+
+.header-top__right-contact-us
+	margin-right 2.5rem
+	
+.header-mid
+	height 88px
+	border-bottom 1px solid #e5e5e5
+	display flex
+	flex-direction row
+	justify-content space-between
+	align-items center
+	border-right 1px solid #e5e5e5
+	border-left 1px solid #e5e5e5
+.header-mid__logo
+	font-family Roboto-bold
+	font-size 2.35rem
+	letter-spacing 1.5px
+.header-mid__search
+	width 87px
+	height 88px
+	border-right 1px solid #e5e5e5
+.header-mid__img-search
+	cursor pointer
+	margin 34px 35px
+.header-mid__cart
+	position relative
+	width 87px
+	height 88px
+	text-align right
+	border-left 1px solid #e5e5e5
+	span
+		position absolute
+		color: #fff
+		top 25px
+		right 23px
+.header-mid__img-cart
+	cursor pointer
+	margin 22px 17px
+
+.header-mid__logo
+	margin 0
+
+.header-bottom
+	border-left 1px solid #e5e5e5
+	border-right 1px solid #e5e5e5
+.header-bottom__menu
+	padding-left 0
+	list-style none
+	display flex
+	justify-content center
+	margin 0
+	height 60px
+	border-bottom 1px solid #e5e5e5
+.header-bottom__li
+	flex-basis 81px
+	text-align center
+	height inherit
+	align-self center
+	margin-right 1.81rem
+	&:first-child
+		margin-left 5px
+	&:last-child
+		margin-right 5px
+	a
+		font-family Roboto-med
+		color #000
+		text-transform uppercase
+		display block
+		height 57px
+		line-height 4.4
+		&:hover
+			border-bottom 3px solid #000
+.burg-menu
+	display none
+	align-self center
+	span
+		display block
+		width 40px
+		height 5px
+		margin-bottom 2px
+		background-color #000
+		border-radius 5px
+@media (max-width 439px)
+	.header-top__left-currency
+		margin 0
+	.header-top__right	
+		text-align right
+		.header-top__right-contact-us
+			margin 0	
+@media (max-width 425px)
+	html
+		font-size 10px
+	.header-bottom__li
+		display none
+	.burg-menu
+		display block
+	.main-popular__products
+		flex-direction column
