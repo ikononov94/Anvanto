@@ -3,10 +3,11 @@
 .main-popular__products
 	display flex
 	flex-wrap wrap
+	justify-content space-between
 .main-popular__product
+	flex-basis 255px
 	position relative
 	margin-top 18px
-	margin-right 30px
 	text-align center
 	cursor pointer
 	h4	
@@ -94,22 +95,11 @@
 .main-popular__product-color3
 	background-color #d41616
 	
-@media (max-width 571px)
+@media (max-width 1020px)
 	.main-popular__products
-		flex-direction column
-	.main-popular__product
-		margin 0
-		width 255px
-		align-self center
-
-@media (min-width 571px) and (max-width 1108px)
-	.main-popular__products
-		flex-direction row
 		justify-content space-around
-	.main-popular__product
-		margin 0
-		width 255px
-		align-self center
+	
+
 
 		
 		

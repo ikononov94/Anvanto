@@ -5,19 +5,14 @@
 	flex-wrap wrap
 	position relative
 	cursor pointer
+	justify-content space-around
 .information-product
-	&:nth-child(4)
-		position absolute
-		top 370px
-	&:nth-child(5)
-		position absolute
-		right 0
-		top 370px
-	&:nth-child(2)
-		position relative
-	&:nth-child(3)
-		height 370px
-		position relative
+	position relative
+	flex-basis 370px
+.inforpmation-product__img-bottom
+	margin-top -4px
+.information-product__block1
+	position relative
 		
 .product-info
 	position absolute
@@ -66,7 +61,7 @@
 	font-family Roboto-bold
 	position absolute
 	left 146px
-	bottom 127px
+	top 230px
 	color #fff
 	font-size 0.86rem
 	text-transform uppercase
@@ -91,35 +86,31 @@
 	background-color #df0101
 	padding 10px 15px
 	
-@media (min-width 375px) and (max-width 425px)
+@media (max-width 425px)
 	.information-product
-		left 7%
-		&:nth-child(1)
-			margin-left 7%
-		&:nth-child(2)
-			top 270px
-		&:nth-child(3)
-			top 270px
-		&:nth-child(5)
-			top 1760px
-			
-@media (max-width 375px)
-	.information-product
-		width 90%
-		left 0
-		&:nth-child(1)
-			margin-left 0
+		flex-basis 300px
+	.information-product > img
+	.information-product__block1
+	.information-product__block1 > img
+		width 300px
+		text-align center
+	.product-info
+		top 100px
+		left 153px
+	.product-info__lookbook
+		left 126px
+		top 180px
+	.product-info2
+		top 19px
+		left 90px
+	.btn-shop-now
+		left 95px
+		bottom 78px
 
-@media (max-width 571px)
-	.information-product
-		left 3%
-		&:nth-child(1)
-			margin-left 3%
-		&:nth-child(2)
-			top 270px
-		&:nth-child(3)
-			top 270px
-		&:nth-child(5)
-			top 1760px
+@media (max-width 1110px)
+	.inforpmation-product__img-bottom
+		margin-top 0
+	
+		
 
 	
